@@ -27,6 +27,7 @@ Notes:
 def emotify(txt):
     # Your code here
     # make a dict
+    
     data = {
         "smile" :  ":)",
         "grin" : ":D",
