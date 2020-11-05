@@ -14,4 +14,21 @@ Examples:
 """
 def repeat_it(input_str):
     # Your code here
+    # initialize a new_str
+    new_str = ""
+    counter = 0
+    #for each letter in input_str uppercase and multiply and addd to list
+    for i, letter in enumerate(input_str):
+        if i == 0:
+            letter = letter.upper()
+            new_str 
+        new_str += (letter*(i+1) + "-")
+    
+        
+    # return the result new_str
+    return new_str
+
+print(repeat_it("abcd"))# -> "A-Bb-Ccc-Dddd"
+print(repeat_it("RqaEzty"))# -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+print(repeat_it("cwAt"))# -> "C-Ww-Aaa-Tttt"
 
