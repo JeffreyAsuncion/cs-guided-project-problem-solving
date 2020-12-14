@@ -21,8 +21,11 @@ def repeat_it(input_str):
     for i, letter in enumerate(input_str):
         if i == 0:
             letter = letter.upper()
-            new_str 
-        new_str += (letter*(i+1) + "-")
+            new_str = letter + "-"
+        elif i == len(input_str) - 1:
+            new_str += letter.upper() + (letter.lower()*(i))
+        else:
+            new_str += letter.upper() + (letter.lower()*(i) + "-")
     
         
     # return the result new_str

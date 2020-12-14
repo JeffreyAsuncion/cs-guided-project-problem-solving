@@ -17,5 +17,15 @@ the maximum number is first.
 """
 def max_and_min(input_str):
     # Your code here
+    input_str = input_str.split(' ')
+    # result = inputNums
+    result = [int(i) for i in input_str]
+    result.sort()
+    maxNum = result[-1]
+    minNum = result[0]
+    return f"{maxNum} {minNum}"
 
 
+print(max_and_min("1 2 3 4 5"))# -> "5 1"
+print(max_and_min("1 2 -3 4 5"))# -> "5 -3"
+print(max_and_min("1 9 3 4 -5"))# -> "9 -5"

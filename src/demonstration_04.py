@@ -29,10 +29,10 @@ def emotify(txt):
     # make a dict
     
     data = {
-        "smile" :  ":)",
+        "smile": ":)",
         "grin" : ":D",
-        "sad" : ":(",
-        "mad" : ":P"
+        "sad"  : ":(",
+        "mad"  : ":P"
     }
 
     for k, v in data.items():
